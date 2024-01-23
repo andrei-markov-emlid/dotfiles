@@ -1,3 +1,4 @@
 - clean: []
-- link: {}
+- link:
+    ~/.zshrc: zsh/zshrc
 - shell: []
