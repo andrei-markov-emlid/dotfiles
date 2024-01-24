@@ -1,4 +1,9 @@
 - clean: []
 - link:
     ~/.zshrc: zsh/zshrc
-- shell: []
+- shell:
+  - chsh -s $(which zsh)
+  - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  - curl https://pyenv.run | bash
+  - curl -sSL https://install.python-poetry.org | python3 -
+  - poetry config virtualenvs.in-project true
